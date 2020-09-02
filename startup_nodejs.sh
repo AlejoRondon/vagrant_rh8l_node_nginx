@@ -17,4 +17,14 @@ echo "<+++++>Is NodeJS Installed?"
 node -v
 npm -v
 which node 
-which npm 
+which npm
+echo "https://linuxize.com/post/how-to-install-yarn-on-centos-8/"
+echo "<+++++>Installing yarn"
+
+# 1. Enable the Yarn repository and import the repository’s GPG key
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+rpm --import https://dl.yarnpkg.com/rpm/pubkey.gpg
+# 2. Enable the Yarn repository and import the repository’s GPG key:
+dnf install -y yarn
+# 3. Verify the installation by printing the Yarn version number
+yarn --version
