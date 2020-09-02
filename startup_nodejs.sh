@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "<+++++>INSTALLING NODEJS<+++++>"
+echo "<+++++>STARTING UP NODEJS<+++++>"
 echo "<+++++>https://www.tecmint.com/install-node-js-in-rhel-8/"
 echo "<+++++>Installing Node.js on RHEL 8"
 # 1. To install the latest version of Node.js, you need to install development tools such as make, git, gcc on your system using the following dnf command.
