@@ -79,14 +79,20 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", path: './startup_workstation.sh'
   config.vm.provision "shell", path: './startup_nodejs.sh'
+  config.vm.provision "shell", path: './startup_nginx.sh'
+  config.vm.provision "shell", path: './startup_firewall.sh'
+  config.vm.provision "shell", path: './create_test_reactapp.sh'
+  config.vm.provision "shell", path: './extras.sh'
 
   #apt-get update
     #apt-get install -y apache2
   # SHELL
-  config.vm.provision "shell" , inline:<<-SHELL
-    echo "<----->Disabling firewalld"
-    systemctl disable firewalld
-  SHELL
+  #Firewall settings
+  # config.vm.provision "shell" , inline:<<-SHELL
+  #   echo "<----->https://linuxconfig.org/redhat-8-stop-start-firewall"
+  #   echo "<----->Disabling firewalld"
+  #   systemctl disable firewalld
+  # SHELL
   
 
 end
