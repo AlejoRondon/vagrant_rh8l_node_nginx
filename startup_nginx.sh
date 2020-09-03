@@ -6,7 +6,7 @@ echo "<------>https://www.cyberciti.biz/faq/how-to-install-and-use-nginx-on-cent
 # Install NGINX, the command line utilities tmux, and tar.
 echo "<------>Installing NGINX"
 dnf update
-dnf install -y nginx
+dnf install -y nginx tmux tar
 # Start the Nginx service:
 echo "<------>Starting NGINX"
 systemctl start nginx
