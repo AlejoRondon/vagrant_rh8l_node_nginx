@@ -6,7 +6,7 @@ server {
 
     #Configures the publicly served root directory
     #Configures the index file to be served
-    root /var/www/example.com;
+    root /var/www/testapp.com;
     index index.html index.htm;
 
     #These lines create a bypass for certain pathnames
